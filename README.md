@@ -35,6 +35,8 @@ DishAI is an intelligent cooking assistant that uses Google Vertex AI to analyze
 
 - License
 <hr>
+
+
 ### Features
 
 - Image Upload
