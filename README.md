@@ -4,6 +4,13 @@
 
 DishAI is an intelligent cooking assistant that uses Google Vertex AI to analyze user-uploaded images, detect ingredients, and automatically generate simple, easy-to-make meal ideas. Whether you're trying to reduce food waste or just don’t know what to cook, DishAI turns a quick photo into instant meal inspiration.
 
+
+<video width="320" height="240" controls>
+	<source  src='./demo.mp4' type='video/mp4'>
+	<source src='./demo.ogg' type='video/ogg'>
+</video>
+
+
 ##  Table of Contents
 
 - Features
@@ -194,6 +201,7 @@ for local deployment
 - Support for multiple cuisines
 
 - Mobile app version (React Native / Flutter)
+
 ### License
 
 MIT License
