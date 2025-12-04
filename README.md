@@ -81,6 +81,8 @@ Clean interface for uploading images and viewing generated meals.
         -   Veggie Wrap
 
 5. User receives a list of easy-to-follow meal suggestions.
+
+6. Intrested in the [presentation](https://drive.google.com/drive/folders/1Y4fNH5BFRpIocVweVivQ0OD3TUWZdztx?usp=sharing) 
 ### Architecture Overview
 - Frontend
     - React
