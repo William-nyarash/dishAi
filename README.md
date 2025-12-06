@@ -33,6 +33,9 @@ https://github.com/user-attachments/assets/1130dbda-048f-4e97-b886-0acb82332133
 <hr>
 
 
+## It's Live [click](https://dishi-na-ai.onrender.com/)
+
+
 ### Features
 
 - Image Upload
