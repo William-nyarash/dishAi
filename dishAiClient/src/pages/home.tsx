@@ -17,7 +17,7 @@ export default function Home() {
     const formData = new FormData();
     formData.append("image", image);
 
-    const res = await axios.post("http://localhost:3000/api/meal", formData);
+    const res = await axios.post("https://node-vertex-ai-68618013693.us-central1.run.app/api/meal", formData);
     setResult(res.data);
   };
 
