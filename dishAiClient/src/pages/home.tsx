@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
 
@@ -6,7 +6,23 @@ export default function Home() {
   const [image, setImage] = useState<File | null>(null);
   const [result, setResult] = useState<{ ingredients: string; meal: string } | null>(null);
   const  [isLoading, setIsLoading ] = useState(false);
- 
+  const [index, setIndex ] = useState(0);
+
+
+  const messages = [
+    "Consulting the chef",
+    "Curating the perfect recipe",
+    "On your marks, set, cook...."
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % messages.length);
+    },50000);
+
+    return () => clearInterval(interval);
+
+  }, [messages.length])
   const handleImage = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) setImage(file);
@@ -46,6 +62,9 @@ export default function Home() {
       isLoading ? (
         <div style={{ display: "flex",flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "2rem" }}>
           <ClipLoader loading={true} size={250} color="#36d7b7" />
+          <p style={{ marginTop: "1rem", fontSize: "1rem", color: "#555" }}>
+            {messages[index]}
+          </p>
         </div>
       ) : result && (
         <div className="mt-6 p-4 border rounded bg-gray-100">
